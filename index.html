@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="data:;base64,=">
+    <script src="main.js"></script>
+    <title>Spotify Music Project</title>
+</head>
+<body>
+    <!-- Start of Container for Spotify Songs -->
+    <div class="container">
+        <div class="buttoncontain">
+            <button onclick="stopSnippet()">Stop Song</button>
+        </div>        
+        <div class="gallery">   <!-- To Do: add onclick event listener for figures-->
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/Tyler_Childers_-_Country_Squire.png" alt="House Fire Tyler Childers">
+            </figure>
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/sailorsguidetoearth.jpg" alt="Sam Sturgill Simpson" >
+            </figure>
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/aftergold.jpg" alt="Aftergold by Big Wild, Tove Styrke" >
+            </figure>
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/fun-machine.jpg" alt="Automatic Lake Street Dive" >
+            </figure>
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/the-dip.jpg" alt="Sure Don't Miss You The Dip" >
+            </figure>
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/let-the-good-times-roll.jpg" alt="JD McPherson Let The Good Times Roll" >
+            </figure>
+        </div>
+        
+    </div>
+</body>
+</html>
